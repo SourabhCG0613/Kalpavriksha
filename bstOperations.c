@@ -49,10 +49,10 @@ void display(node* tnode)
 }
 
 int main() {
-    int i, num, value;
+    int numOfElements, value;
     node *root = NULL;
-    scanf("%d", &num);
-    for (i = 0; i < num; i++){
+    scanf("%d", &numOfElements);
+    for (int iterator = 0; iterator < num; iterator++){
         scanf("%d",&value);
         root = insert(value, root);
     }
