@@ -16,8 +16,8 @@ int main(void)
 	    char inputString[strLength];
 	    scanf("%s",inputString);
 	    for(int iterator=0;iterator<strLength;iterator++){
-	        countArray[iterator]=0;
-	       for(int iterator2=0;iterator2<strLength;iterator2++){
+	    	countArray[iterator]=0;
+	        for(int iterator2=0;iterator2<strLength;iterator2++){
 	            if(inputString[iterator]==inputString[iterator2])
                     countArray[iterator]++;
 	       }

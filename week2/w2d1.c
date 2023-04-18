@@ -13,20 +13,18 @@ int main(void) {
 	{
 	    char input[100];
         scanf("%s" ,input);
-        int count1=0,count0=0,iterator;
-        for(iterator=0;iterator<strlen(input);iterator++)
+        int count1=0,count0=0;
+        for(int iterator=0;iterator<strlen(input);iterator++)
         {
             if(input[iterator]=='1')
-            count1++;
+                count1++;
             else
-            count0++;
-            
-            
+                count0++;
         }
         if(count1>count0)
-        printf("\nWIN");
+            printf("\nWIN");
         else
-        printf("\nLOSE");
+            printf("\nLOSE");
 	}
 	return 0;
 }
